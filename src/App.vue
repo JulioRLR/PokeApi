@@ -112,7 +112,6 @@ export default {
       axios.get(`https://pokeapi.co/api/v2/pokemon/${this.checked}`).then((response) => {
         this.pokemon = response.data;
         console.log(this.pokemon);
-        console.log("pato");
         const habilidades = response.data.abilities;
         console.log(habilidades);
 
